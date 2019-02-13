@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Rajdhani Bold";
+  src: url("../fonts/Rajdhani/Rajdhani-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Rajdhani Medium";
+  src: url("../fonts/Rajdhani/Rajdhani-Medium.ttf") format("truetype"); }
+
+.container {
+  max-width: 320px;
+  background: yellow;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px; } }
+  @media (min-width: 1598px) {
+    .container {
+      max-width: 1598px; } }
+
+.wrapper {
+  margin: 0 14px; }
+  @media (min-width: 768px) {
+    .wrapper {
+      margin: 0 18px; } }
+  @media (min-width: 1598px) {
+    .wrapper {
+      margin: 0 185px; } }
+
+.carousel-indicators li {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background: #ffffff; }
+  .carousel-indicators li.active {
+    background: #221f1f; }
+
+.header {
+  width: 320px;
+  height: 163px;
+  position: relative; }
+  @media (min-width: 768px) {
+    .header {
+      height: 460px;
+      width: 768px; } }
+  @media (min-width: 1598px) {
+    .header {
+      height: 706px;
+      width: 1598px; } }
+  .header__banner {
+    background: #c5c5c5;
+    height: 16px;
+    width: 100%; }
+  .header__text {
+    text-transform: uppercase;
+    width: 390px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    margin-left: 50px; }
+  .header__main-header {
+    font-family: 'Rajdhani Medium', Helvetica, Arial, Sans-Serif;
+    font-size: 14px;
+    display: inline-block; }
+    .header__main-header span {
+      font-family: 'Rajdhani Bold', Helvetica, Arial, Sans-Serif; }
+    @media (min-width: 768px) {
+      .header__main-header {
+        font-size: 23px; } }
+    @media (min-width: 1598px) {
+      .header__main-header {
+        font-size: 35px;
+        padding-left: 55px;
+        padding-right: 52px;
+        border-bottom: 2px solid #000; } }
+  .header__sub-header {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 23px; }
+    @media (min-width: 768px) {
+      .header__sub-header {
+        font-size: 15px; } }

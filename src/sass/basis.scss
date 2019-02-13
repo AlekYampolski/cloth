@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Rajdhani Bold";
+    src: url('../fonts/Rajdhani/Rajdhani-Bold.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Rajdhani Medium";
+    src: url('../fonts/Rajdhani/Rajdhani-Medium.ttf') format("truetype");
+}
+
+.container {
+    max-width: 320px;
+    background: yellow;
+    margin: 0 auto;
+    @include media-middle(){
+        max-width: 768px;
+    }
+    @include media-large(){
+        max-width: 1598px;
+    }
+}
+
+.wrapper {
+    margin: 0 14px;
+    @include media-middle(){
+        margin: 0 18px;
+    }
+    @include media-large(){
+        margin: 0 185px;
+    }
+}

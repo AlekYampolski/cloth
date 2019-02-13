@@ -1,0 +1,11 @@
+@mixin media-large() {
+    @media (min-width: $break-large) {
+        @content;
+      }
+}
+
+@mixin media-middle() {
+    @media (min-width: $break-middle) {
+        @content;
+      }
+}
