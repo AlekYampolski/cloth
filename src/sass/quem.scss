@@ -1,0 +1,33 @@
+.quem {
+    .wrapper {
+        margin: 0px 0px;
+        @include media-middle(){
+            margin: 0 18px;
+        }
+        @include media-large(){
+            margin: 0 160px;
+        }
+    }
+    margin-bottom: 65px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 170/320*100%;
+        position: relative;
+        &:hover .quem__desc {
+            opacity: 1;
+         }
+        @include media-middle(){
+            width: 170/731*100%;   
+        }
+        @include media-large(){
+            width: 285/1231*100%;
+        }
+    }
+    &__desc {
+        @include hover-desc();
+        text-transform: capitalize;
+    }
+}

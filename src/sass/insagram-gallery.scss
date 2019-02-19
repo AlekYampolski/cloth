@@ -1,0 +1,32 @@
+.instagram-gallery {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        &:hover .instagram-gallery__desc {
+            opacity: 1;
+         }
+        position: relative;
+        background: #6d6e71;
+      
+        @include media-middle(){
+            width:  134/731*100%;
+        }
+        @include media-large(){
+            width: 227/1231*100%;
+        }
+    }
+    &__img {
+        &:hover {
+            background: rgba(0, 0, 0, .6);
+        }
+    }
+    &__desc {
+       @include hover-desc();
+    }
+
+    &__like-icon{
+        margin-bottom: 15px;
+    }
+}
