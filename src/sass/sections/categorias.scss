@@ -1,0 +1,111 @@
+.categorias {
+  picture {
+    position: relative;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 1px 3px #000;
+    font-size: 20px;
+
+    font-family: "Rajdhani SemiBold";
+    @include media-large() {
+      font-size: 34px;
+    }
+  }
+
+  &__desc {
+    @include hover-desc();
+    font-family: "Rajdhani Regular";
+  }
+  &__item {
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    &:hover .categorias__desc {
+      opacity: 1;
+    }
+    @include media-middle() {
+      margin-bottom: 15px;
+    }
+    @include media-large() {
+      margin-bottom: 25px;
+    }
+  }
+  &__item-1,
+  &__item-2 {
+    @include media-middle() {
+      flex: 1 1 355px / $container-middle * 100%;
+    }
+    @include media-large() {
+      flex: 1 1 600px / $container-large * 100%;
+    }
+  }
+
+  &__item-3 {
+    @include media-middle() {
+      flex: 1 1 465px / $container-middle * 100%;
+    }
+    @include media-large() {
+      flex: 1 1 780px / $container-large * 100%;
+    }
+  }
+
+  &__item-4 {
+    @include media-middle() {
+      flex: 1 1 248px / $container-middle * 100%;
+    }
+    @include media-large() {
+      flex: 1 1 416px / $container-large * 100%;
+    }
+  }
+
+  &__item-5 {
+    @include media-middle() {
+      flex: 1 1 265px / $container-middle * 100%;
+    }
+    @include media-large() {
+      flex: 1 1 449px / $container-large * 100%;
+    }
+  }
+
+  &__item-6 {
+    @include media-middle() {
+      flex: 1 1 450px / $container-middle * 100%;
+    }
+    @include media-large() {
+      flex: 1 1 775px / $container-large * 100%;
+    }
+  }
+
+  &__item-1,
+  &__item-3,
+  &__item-5 {
+    @include media-middle() {
+      margin-right: 7px;
+    }
+    @include media-large() {
+      margin-right: 14px;
+    }
+  }
+
+  &__item-2,
+  &__item-4,
+  &__item-6 {
+    @include media-middle() {
+      margin-left: 7px;
+    }
+    @include media-large() {
+      margin-left: 14px;
+    }
+  }
+}

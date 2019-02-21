@@ -1,0 +1,46 @@
+.menus {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__login {
+    display: flex;
+    font-family: "Rajdhani Medium";
+    color: #fff;
+    font-size: 21.66px;
+  }
+
+  &__login-text{
+    display: none;
+    @include media-middle(){
+      display: block;
+      margin-right: 25px;
+    }
+  }
+ 
+  &__hamburger-icon{
+    height: 20px;
+  }
+  @media (max-width: 767px) {
+    order: -1;
+  }
+  height: 51px;
+  @include media-middle() {
+    height: 38px;
+  }
+  @include media-large() {
+    height: 48px;
+  }
+  background: black;
+  &__text {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    font-family: "Rajdhani Bold";
+    @include media-middle(){
+      padding-left: 90px;
+    }
+  }
+}

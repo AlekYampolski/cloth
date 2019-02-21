@@ -1,0 +1,95 @@
+.footer {
+  font-family: "Rajdhani Regular";
+  text-transform: uppercase;
+
+  &__sub {
+    background: #000;
+  }
+  &__main {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+
+    @include media-middle() {
+      flex-direction: row;
+    }
+    justify-content: space-between;
+  }
+  &__main-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 41px;
+    font-size: 19.23px;
+    text-align: center;
+    margin-bottom: 8px;
+    border: 2px #d0d0d0 solid;
+    &:hover {
+      cursor: pointer;
+    }
+    @include media-middle() {
+      width: 220/731 * 100%;
+    }
+    @include media-large() {
+      width: 380/1231 * 100%;
+    }
+
+    &--black {
+      background: #000;
+      color: #eee;
+      border: none;
+      @include media-middle() {
+        width: 133/731 * 100%;
+        -webkit-clip-path: polygon(
+          0% 0%,
+          210/216 * 100% 0%,
+          100% 50%,
+          210/216 * 100% 100%,
+          0% 100%
+        );
+        clip-path: polygon(
+          0% 0%,
+          210/216 * 100% 0%,
+          100% 50%,
+          210/216 * 100% 100%,
+          0% 100%
+        );
+      }
+      @include media-large() {
+        width: 226/1231 * 100%;
+      }
+    }
+    &--grey {
+      background: #d0d0d0;
+      color: #434343;
+      border: none;
+      @include media-middle() {
+        width: 127/731 * 100%;
+      }
+      @include media-large() {
+        width: 215/1231 * 100%;
+      }
+    }
+  }
+
+  &__galeria-links {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    display: flex;
+    color: #fff;
+    height: 36px;
+    display: none;
+    @include media-middle() {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__sub-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 22px;
+  }
+}

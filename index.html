@@ -40,14 +40,14 @@
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/carousel/large/main-1.jpg"
+                srcset="./dist/img/carousel/large/main-1.jpg"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="./img/carousel/middle/main-1.jpg"
+                srcset="./dist/img/carousel/middle/main-1.jpg"
               />
               <img
-                src="./img/carousel/small/main-1.jpg"
+                src="./dist/img/carousel/small/main-1.jpg"
                 alt="First slide"
                 style="width:100%;"
               />
@@ -57,14 +57,14 @@
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/carousel/large/sub-1.jpg"
+                srcset="./dist/img/carousel/large/sub-1.jpg"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="./img/carousel/middle/sub-1.jpg"
+                srcset="./dist/img/carousel/middle/sub-1.jpg"
               />
               <img
-                src="./img/carousel/small/sub-1.jpg"
+                src="./dist/img/carousel/small/sub-1.jpg"
                 alt="Second slide"
                 style="width:100%;"
               />
@@ -74,14 +74,14 @@
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/carousel/large/sub-2.jpg"
+                srcset="./dist/img/carousel/large/sub-2.jpg"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="./img/carousel/middle/sub-2.jpg"
+                srcset="./dist/img/carousel/middle/sub-2.jpg"
               />
               <img
-                src="./img/carousel/small/sub-2.jpg"
+                src="./dist/img/carousel/small/sub-2.jpg"
                 alt="Third slide"
                 style="width:100%;"
               />
@@ -91,14 +91,14 @@
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/carousel/large/sub-3.jpg"
+                srcset="./dist/img/carousel/large/sub-3.jpg"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="./img/carousel/middle/sub-3.jpg"
+                srcset="./dist/img/carousel/middle/sub-3.jpg"
               />
               <img
-                src="./img/carousel/small/sub-3.jpg"
+                src="./dist/img/carousel/small/sub-3.jpg"
                 alt="4th slide"
                 style="width:100%;"
               />
@@ -108,14 +108,14 @@
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/carousel/large/sub-4.jpg"
+                srcset="./dist/img/carousel/large/sub-4.jpg"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="./img/carousel/middle/sub-4.jpg"
+                srcset="./dist/img/carousel/middle/sub-4.jpg"
               />
               <img
-                src="./img/carousel/small/sub-4.jpg"
+                src="./dist/img/carousel/small/sub-4.jpg"
                 alt="5th  slide"
                 style="width:100%;"
               />
@@ -155,215 +155,256 @@
     <!-- ./Hero -->
     <!-- Navigation Section -->
     <section class="menus">
-      <button type="button">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </section>
+      <!-- Menus -->
+      <div class="wrapper">
+
+        <div class="menus__hamburger">
+          <img class="menus__hamburger-icon" src="./dist/img/hamburger-icon.png" alt="menu icon" />
+        </div>
+        <div class="menus__text">Cloth & fasion</div>
+        <div class="menus__login">
+          <div class="menus__login-text">Login</div>
+          <div class="menus__shopcart">
+            <img src="./dist/img/shopcart.png" alt="shopcart" />
+          </div>
+        </div>
+      </div>
+      </section>
     <!-- ./ Navigation Section -->
     <!-- Produtos seciton -->
     <section class="produtos">
+      <div class="header">
+        <span class="header__icon header__icon-left"></span>
+        PRODUTOS EM DESTAQUE
+        <span class="header__icon header__icon-right"></span>
+      </div>
       <div class="wrapper">
-        <div class="header">
-          <span class="header__icon-left"
-            ><img src="./img/seta_l.png" alt=""
-          /></span>
-          PRODUTOS EM DESTAQUE
-          <span class="header__icon-right"
-            ><img src="./img/seta_r.png" alt=""
-          /></span>
-        </div>
         <div class="produtos__content">
-          <!-- <div class="row mx-auto my-auto"> -->
-          <div
-            id="recipeCarousel"
-            class="carousel slide w-100"
-            data-ride="carousel"
-          >
-            <div class="carousel-inner w-100" role="listbox">
-              <div class="carousel-item active">
-                <img
-                  class="d-block custom-size "
-                  src="./img/produtos/produtos-1.jpg"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block custom-size "
-                  src="./img/produtos/produtos-2.jpg"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block custom-size "
-                  src="./img/produtos/produtos-3.jpg"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block custom-size "
-                  src="./img/produtos/produtos-4.jpg"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block custom-size "
-                  src="./img/produtos/produtos-5.jpg"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block custom-size "
-                  src="./img/produtos/produtos-6.jpg"
-                />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#recipeCarousel"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#recipeCarousel"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
+          <div class="produtos__item">
+            <picture class="produtos__img">
+              <source
+                media="(min-width: 1598px)"
+                srcset="./dist/img/produtos/large/produtos-1.jpg"
+              />
+              <img
+                src="./dist/img/produtos/middle/produtos-1.jpg"
+                alt="produtos-1"
+              />
+              <div class="produtos__desc">comprar</div>
+            </picture>
+            <div class="produtos__text">R$88,88</div>
           </div>
-          <!-- </div> -->
+
+          <div class="produtos__item">
+            <picture class="produtos__img">
+              <source
+                media="(min-width: 1598px)"
+                srcset="./dist/img/produtos/large/produtos-2.jpg"
+              />
+              <img
+                src="./dist/img/produtos/middle/produtos-2.jpg"
+                alt="produtos-2"
+              />
+              <div class="produtos__desc">comprar</div>
+            </picture>
+            <div class="produtos__text">R$88,88</div>
+          </div>
+
+          <div class="produtos__item">
+            <picture class="produtos__img">
+              <source
+                media="(min-width: 1598px)"
+                srcset="./dist/img/produtos/large/produtos-3.jpg"
+              />
+              <img
+                src="./dist/img/produtos/middle/produtos-3.jpg"
+                alt="produtos-3"
+              />
+              <div class="produtos__desc">comprar</div>
+            </picture>
+            <div class="produtos__text">R$88,88</div>
+          </div>
+
+          <div class="produtos__item">
+            <picture class="produtos__img">
+              <source
+                media="(min-width: 1598px)"
+                srcset="./dist/img/produtos/large/produtos-4.jpg"
+              />
+              <img
+                src="./dist/img/produtos/middle/produtos-4.jpg"
+                alt="produtos-4"
+              />
+              <div class="produtos__desc">comprar</div>
+            </picture>
+            <div class="produtos__text">R$88,88</div>
+          </div>
+
+          <div class="produtos__item">
+            <picture class="produtos__img">
+              <source
+                media="(min-width: 1598px)"
+                srcset="./dist/img/produtos/large/produtos-5.jpg"
+              />
+              <img
+                src="./dist/img/produtos/middle/produtos-5.jpg"
+                alt="produtos-5"
+              />
+              <div class="produtos__desc">comprar</div>
+            </picture>
+            <div class="produtos__text">R$88,88</div>
+          </div>
+
+          <div class="produtos__item">
+            <picture class="produtos__img">
+              <source
+                media="(min-width: 1598px)"
+                srcset="./dist/img/produtos/large/produtos-6.jpg"
+              />
+              <img
+                src="./dist/img/produtos/middle/produtos-6.jpg"
+                alt="produtos-6"
+              />
+              <div class="produtos__desc">comprar</div>
+            </picture>
+            <div class="produtos__text">R$88,88</div>
+          </div>
         </div>
       </div>
     </section>
     <!-- ./Produtos seciton -->
     <!-- Categorias -->
     <section class="categorias">
+      <div class="header">
+        <span class="header__icon-divisoria"></span>
+      </div>
       <div class="wrapper">
-        <div class="header">
-          <span><img src="./img/categorias/iconDIVISORIA.png" alt=""/></span>
-        </div>
         <div class="categorias__content">
           <div class="categorias__item categorias__item-1">
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/categorias/large/categorias-1.jpg"
+                srcset="./dist/img/categorias/large/categorias-1.jpg"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="./img/categorias/middle/categorias-1.jpg"
+                srcset="./dist/img/categorias/middle/categorias-1.jpg"
               />
               <img
-                src="./img/categorias/small/categorias-1.jpg"
+                src="./dist/img/categorias/small/categorias-1.jpg"
                 alt="First slide"
                 style="width:100%;"
               />
               <div class="categorias__title">JAQUETAS</div>
             </picture>
+            <div class="categorias__desc">
+              ver mais
+            </div>
           </div>
           <div class="categorias__item categorias__item-2">
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/categorias/large/categorias-2.jpg"
+                srcset="./dist/img/categorias/large/categorias-2.jpg"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="./img/categorias/middle/categorias-2.jpg"
+                srcset="./dist/img/categorias/middle/categorias-2.jpg"
               />
               <img
-                src="./img/categorias/small/categorias-2.jpg"
+                src="./dist/img/categorias/small/categorias-2.jpg"
                 alt="First slide"
                 style="width:100%;"
               />
               <div class="categorias__title">SHORTS</div>
             </picture>
+            <div class="categorias__desc">
+              ver mais
+            </div>
           </div>
           <div class="categorias__item categorias__item-3">
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/categorias/large/categorias-3.jpg"
+                srcset="./dist/img/categorias/large/categorias-3.jpg"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="./img/categorias/middle/categorias-3.jpg"
+                srcset="./dist/img/categorias/middle/categorias-3.jpg"
               />
               <img
-                src="./img/categorias/small/categorias-3.jpg"
+                src="./dist/img/categorias/small/categorias-3.jpg"
                 alt="First slide"
                 style="width:100%;"
               />
               <div class="categorias__title">CORTA-VENTO</div>
             </picture>
+            <div class="categorias__desc">
+              ver mais
+            </div>
           </div>
           <div class="categorias__item categorias__item-4">
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/categorias/large/categorias-4.jpg"
+                srcset="./dist/img/categorias/large/categorias-4.jpg"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="./img/categorias/middle/categorias-4.jpg"
+                srcset="./dist/img/categorias/middle/categorias-4.jpg"
               />
               <img
-                src="./img/categorias/small/categorias-4.jpg"
+                src="./dist/img/categorias/small/categorias-4.jpg"
                 alt="First slide"
                 style="width:100%;"
               />
               <div class="categorias__title">CAMISAS</div>
             </picture>
+            <div class="categorias__desc">
+              ver mais
+            </div>
           </div>
           <div class="categorias__item categorias__item-5">
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/categorias/large/categorias-5.jpg"
+                srcset="./dist/img/categorias/large/categorias-5.jpg"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="./img/categorias/middle/categorias-5.jpg"
+                srcset="./dist/img/categorias/middle/categorias-5.jpg"
               />
               <img
-                src="./img/categorias/small/categorias-5.jpg"
+                src="./dist/img/categorias/small/categorias-5.jpg"
                 alt="First slide"
                 style="width:100%;"
               />
               <div class="categorias__title">CALÇAS</div>
             </picture>
+            <div class="categorias__desc">
+              ver mais
+            </div>
           </div>
           <div class="categorias__item categorias__item-6">
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/categorias/large/categorias-6.jpg"
+                srcset="./dist/img/categorias/large/categorias-6.jpg"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="./img/categorias/middle/categorias-6.jpg"
+                srcset="./dist/img/categorias/middle/categorias-6.jpg"
               />
               <img
-                src="./img/categorias/small/categorias-6.jpg"
+                src="./dist/img/categorias/small/categorias-6.jpg"
                 alt="First slide"
                 style="width:100%;"
               />
               <div class="categorias__title">CAMISETAS</div>
             </picture>
+            <div class="categorias__desc">
+              ver mais
+            </div>
           </div>
         </div>
       </div>
@@ -371,32 +412,30 @@
     <!-- ./Categorias -->
     <!-- Instagram-gallery -->
     <section class="instagram-gallery">
+      <div class="header">
+        <span class="header__icon header__icon-left"></span>
+        GALERIA DO INSTAGRAM
+        <span class="header__icon header__icon-right"></span>
+      </div>
       <div class="wrapper">
-        <div class="header">
-          <span class="header__icon-left"
-            ><img src="./img/seta_l.png" alt=""
-          /></span>
-          GALERIA DO INSTAGRAM
-          <span class="header__icon-right"
-            ><img src="./img/seta_r.png" alt=""
-          /></span>
-        </div>
-        <div class="instagram-gallery__content">
+        <div id="ig-content" class="instagram-gallery__content">
           <div class="instagram-gallery__item">
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/instagram-gallery/large/inst-gal-1.jpg"
+                srcset="./dist/img/instagram-gallery/large/inst-gal-1.jpg"
               />
               <img
-                src="./img/instagram-gallery/middle/inst-gal-1.jpg"
+                src="./dist/img/instagram-gallery/middle/inst-gal-1.jpg"
                 alt="1st inst im"
                 class="instagram-gallery__img"
                 style="width:100%;"
               />
             </picture>
             <div class="instagram-gallery__desc">
-              <div class="instagram-gallery__like-icon"><span><img src="./img/icon-LIKE.png" alt=""></span></div>
+              <div class="instagram-gallery__like-icon">
+                <span><img src="./dist/img/icon-LIKE.png" alt=""/></span>
+              </div>
               <div class="instagram-gallery__likes-number">856 likes</div>
             </div>
           </div>
@@ -404,17 +443,19 @@
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/instagram-gallery/large/inst-gal-2.jpg"
+                srcset="./dist/img/instagram-gallery/large/inst-gal-2.jpg"
               />
               <img
-                src="./img/instagram-gallery/middle/inst-gal-2.jpg"
+                src="./dist/img/instagram-gallery/middle/inst-gal-2.jpg"
                 alt="2nd inst img"
                 class="instagram-gallery__img"
                 style="width:100%;"
               />
             </picture>
             <div class="instagram-gallery__desc">
-              <div class="instagram-gallery__like-icon"><span><img src="./img/icon-LIKE.png" alt=""></span></div>
+              <div class="instagram-gallery__like-icon">
+                <span><img src="./dist/img/icon-LIKE.png" alt=""/></span>
+              </div>
               <div class="instagram-gallery__likes-number">1.123 likes</div>
             </div>
           </div>
@@ -422,17 +463,19 @@
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/instagram-gallery/large/inst-gal-3.jpg"
+                srcset="./dist/img/instagram-gallery/large/inst-gal-3.jpg"
               />
               <img
-                src="./img/instagram-gallery/middle/inst-gal-3.jpg"
+                src="./dist/img/instagram-gallery/middle/inst-gal-3.jpg"
                 alt="3rd inst img"
                 class="instagram-gallery__img"
                 style="width:100%;"
               />
             </picture>
             <div class="instagram-gallery__desc">
-              <div class="instagram-gallery__like-icon"><span><img src="./img/icon-LIKE.png" alt=""></span></div>
+              <div class="instagram-gallery__like-icon">
+                <span><img src="./dist/img/icon-LIKE.png" alt=""/></span>
+              </div>
               <div class="instagram-gallery__likes-number">1.323 likes</div>
             </div>
           </div>
@@ -440,17 +483,19 @@
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/instagram-gallery/large/inst-gal-4.jpg"
+                srcset="./dist/img/instagram-gallery/large/inst-gal-4.jpg"
               />
               <img
-                src="./img/instagram-gallery/middle/inst-gal-4.jpg"
+                src="./dist/img/instagram-gallery/middle/inst-gal-4.jpg"
                 alt="4th inst img"
                 class="instagram-gallery__img"
                 style="width:100%;"
               />
             </picture>
             <div class="instagram-gallery__desc">
-              <div class="instagram-gallery__like-icon"><span><img src="./img/icon-LIKE.png" alt=""></span></div>
+              <div class="instagram-gallery__like-icon">
+                <span><img src="./dist/img/icon-LIKE.png" alt=""/></span>
+              </div>
               <div class="instagram-gallery__likes-number">958 likes</div>
             </div>
           </div>
@@ -458,17 +503,19 @@
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/instagram-gallery/large/inst-gal-5.jpg"
+                srcset="./dist/img/instagram-gallery/large/inst-gal-5.jpg"
               />
               <img
-                src="./img/instagram-gallery/middle/inst-gal-5.jpg"
+                src="./dist/img/instagram-gallery/middle/inst-gal-5.jpg"
                 alt="5th inst img"
                 class="instagram-gallery__img"
                 style="width:100%;"
               />
             </picture>
             <div class="instagram-gallery__desc">
-              <div class="instagram-gallery__like-icon"><span><img src="./img/icon-LIKE.png" alt=""></span></div>
+              <div class="instagram-gallery__like-icon">
+                <span><img src="./dist/img/icon-LIKE.png" alt=""/></span>
+              </div>
               <div class="instagram-gallery__likes-number">756 likes</div>
             </div>
           </div>
@@ -478,94 +525,88 @@
     <!-- ./Instagram-gallery -->
     <!-- QUEM  -->
     <section class="quem">
+      <div class="header">
+        <span class="header__icon header__icon-left"></span>
+        QUEM USA
+        <span class="header__icon header__icon-right"></span>
+      </div>
       <div class="wrapper">
-        <div class="header">
-          <span class="header__icon-left"
-            ><img src="./img/seta_l.png" alt=""
-          /></span>
-          QUEM USA
-          <span class="header__icon-right"
-            ><img src="./img/seta_r.png" alt=""
-          /></span>
-        </div>
         <div class="quem__content">
           <div class="quem__item">
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/quem/large/quem-1.jpg"
+                srcset="./dist/img/quem/large/quem-1.jpg"
               />
               <img
-                src="./img/quem/middle/quem-1.jpg"
+                src="./dist/img/quem/middle/quem-1.jpg"
                 alt="1st inst im"
                 class="instagram-gallery__img"
                 style="width:100%;"
               />
             </picture>
             <div class="quem__desc">
-                semper ipsum
+              semper ipsum
             </div>
           </div>
           <div class="quem__item">
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/quem/large/quem-2.jpg"
+                srcset="./dist/img/quem/large/quem-2.jpg"
               />
               <img
-                src="./img/quem/middle/quem-2.jpg"
+                src="./dist/img/quem/middle/quem-2.jpg"
                 alt="1st inst im"
                 class="instagram-gallery__img"
                 style="width:100%;"
               />
             </picture>
             <div class="quem__desc">
-                David Guette
-              </div>
+              David Guette
+            </div>
           </div>
           <div class="quem__item">
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/quem/large/quem-3.jpg"
+                srcset="./dist/img/quem/large/quem-3.jpg"
               />
               <img
-                src="./img/quem/middle/quem-3.jpg"
+                src="./dist/img/quem/middle/quem-3.jpg"
                 alt="1st inst im"
                 class="instagram-gallery__img"
                 style="width:100%;"
               />
             </picture>
             <div class="quem__desc">
-                David Guette
-              </div>
+              David Guette
+            </div>
           </div>
           <div class="quem__item">
             <picture>
               <source
                 media="(min-width: 1598px)"
-                srcset="./img/quem/large/quem-4.jpg"
+                srcset="./dist/img/quem/large/quem-4.jpg"
               />
               <img
-                src="./img/quem/middle/quem-4.jpg"
+                src="./dist/img/quem/middle/quem-4.jpg"
                 alt="1st inst im"
                 class="instagram-gallery__img"
                 style="width:100%;"
               />
             </picture>
             <div class="quem__desc">
-                David Guette
-              </div>
+              David Guette
+            </div>
           </div>
         </div>
       </div>
-
     </section>
     <!-- ./QUEM  -->
     <!-- Footer -->
     <section class="footer">
       <div class="wrapper">
-        
         <ul class="footer__main">
           <li class="footer__main-item footer__main-item--black">
             NEWSLETTER
@@ -580,30 +621,33 @@
             CADASTRAR
           </li>
         </ul>
-        <ul class="footer__galeria-links">
-        <li class="footer__sub-item">
-          sobre
-        </li>
-        <li class="footer__sub-item">
-          contato
-        </li>
-        <li class="footer__sub-item">
-          termos & condicoes
-        </li>
-        <li class="footer__sub-item">
-          contato
-        </li>
-        <li class="footer__sub-item">
-          politica de privacidade
-        </li>
-      </ul>
-    </div>
+      </div>
+      <div class="footer__sub">
+        <div class="wrapper">
+          <ul class="footer__galeria-links">
+            <li class="footer__sub-item">
+              sobre
+            </li>
+            <li class="footer__sub-item">
+              contato
+            </li>
+            <li class="footer__sub-item">
+              termos & condicoes
+            </li>
+            <li class="footer__sub-item">
+              contato
+            </li>
+            <li class="footer__sub-item">
+              politica de privacidade
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <!-- ./Footer -->
-
-    <script src="js/assets/jquery-3.3.1 .js"></script>
-    <script src="js/assets/bootstrap.min.js"></script>
-    <script src="js/assets/slick.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="dist/js/assets/jquery-3.3.1 .js"></script>
+    <script src="dist/js/assets/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/assets/slick.min.js"></script>
+    <script src="dist/js/custom.js"></script>
   </body>
 </html>

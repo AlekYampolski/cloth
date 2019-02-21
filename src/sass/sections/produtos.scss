@@ -1,0 +1,63 @@
+.produtos {
+  .wrapper {
+    margin: 0;
+  }
+  &__item {
+    padding: 0 6px;
+    &:hover .produtos__desc {
+      opacity: 1;
+    }
+  }
+  &__content {
+    @include media-large() {
+      padding: 22px;
+    }
+  }
+
+  &__img {
+    position: relative;
+  }
+  &__desc {
+    position: absolute;
+    font-family: "Rajdhani SemiBold";
+    font-size: 16.34px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1.25px;
+    justify-content: center;
+    bottom: 0;
+    height: 28px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s ease;
+    background: rgba(0, 0, 0, 0.66);
+    color: #fff;
+    width: 155px;
+    text-transform: uppercase;
+    @include media-large() {
+      width: 187px;
+    }
+  }
+  &__text {
+    text-align: center;
+  }
+  .slick-prev,
+  .slick-next {
+    top: 40%;
+  }
+  .slick-prev:before {
+    content: "<";
+    color: black;
+  }
+  .slick-next:before {
+    content: ">";
+    color: black;
+    font-size: 30px;
+  }
+  .slick-next {
+    right: 0;
+  }
+  .slick-prev {
+    left: 0;
+  }
+}

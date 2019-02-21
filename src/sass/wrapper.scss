@@ -1,0 +1,9 @@
+.wrapper {
+  margin: 0 14px;
+  @include media-middle() {
+    margin: 0 18px;
+  }
+  @include media-large() {
+    margin: 0 160px;
+  }
+}

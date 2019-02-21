@@ -1,14 +1,20 @@
-@import 'slick/slick.scss';
-@import 'slick/slick-theme.scss';
+@import "slick/slick.scss";
+@import "slick/slick-theme.scss";
+@import "normalize";
 
-@import 'variables';
-@import 'fonts';
-@import 'mixins';
-@import 'basis';
-@import 'hero';
-@import 'produtos';
-@import 'menus';
-@import 'categorias';
-@import 'insagram-gallery';
-@import 'quem';
-@import 'footer';
+@import "fonts";
+@import "variables";
+@import "mixins";
+
+@import "header";
+@import "wrapper";
+
+@import "basis";
+
+@import "sections/hero";
+@import "sections/produtos";
+@import "sections/menus";
+@import "sections/categorias";
+@import "sections/insagram-gallery";
+@import "sections/quem";
+@import "sections/footer";
