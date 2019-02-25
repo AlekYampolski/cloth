@@ -25,7 +25,15 @@
 
   &__desc {
     @include hover-desc();
+  }
+  &__hover-text {
     font-family: "Rajdhani Regular";
+    position: absolute;
+    right: 50%;
+    top: 55%;
+    transform: translateX(50%);
+    padding-top: 20px;
+    border-top: 2px solid #221f1f;
   }
   &__item {
     width: 100%;

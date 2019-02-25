@@ -3,7 +3,6 @@ $( document ).ready(function() {
     centerMode: true,
     arrows: true,
     variableWidth: true,
-    // centerPadding: '60px',
     slidesToShow: 6,
     responsive: [
       {
@@ -11,7 +10,6 @@ $( document ).ready(function() {
         settings: {
           arrows: true,
           centerMode: false,
-          // centerPadding: '30px',
           variableWidth: true,
           slidesToShow: 4
         }

@@ -1,5 +1,7 @@
 .wrapper {
   margin: 0 14px;
+  position: relative;
+  overflow: hidden;
   @include media-middle() {
     margin: 0 18px;
   }
