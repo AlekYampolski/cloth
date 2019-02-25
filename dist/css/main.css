@@ -675,6 +675,9 @@ body {
 
 .produtos .wrapper {
   margin: 0; }
+  @media (min-width: 1598px) {
+    .produtos .wrapper {
+      margin: 0 160px; } }
 
 .produtos__item {
   padding: 0 6px; }
@@ -711,10 +714,6 @@ body {
 
 .produtos__text {
   text-align: center; }
-
-.produtos .slick-prev,
-.produtos .slick-next {
-  top: 40%; }
 
 .produtos .slick-prev:before {
   content: "<";
@@ -859,7 +858,7 @@ body {
 
 @media (min-width: 1598px) {
   .categorias__item-5 {
-    flex: 1 1 36.50407%; } }
+    flex: 1 1 34.47154%; } }
 
 @media (min-width: 768px) {
   .categorias__item-6 {
@@ -867,7 +866,7 @@ body {
 
 @media (min-width: 1598px) {
   .categorias__item-6 {
-    flex: 1 1 63.00813%; } }
+    flex: 1 1 58.94309%; } }
 
 @media (min-width: 768px) {
   .categorias__item-1, .categorias__item-3, .categorias__item-5 {
@@ -936,7 +935,9 @@ body {
       width: 136px; } }
   @media (min-width: 1598px) {
     .instagram-gallery__item {
-      width: 227px; } }
+      width: 227px;
+      flex: 1;
+      margin: 0 12px; } }
 
 .instagram-gallery__img {
   width: 169px; }

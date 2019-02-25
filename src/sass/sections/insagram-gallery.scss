@@ -60,6 +60,8 @@
     }
     @include media-large() {
       width: 227px;
+      flex: 1;
+      margin: 0 12px;
     }
   }
   &__img {

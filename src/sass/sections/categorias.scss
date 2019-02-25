@@ -82,7 +82,7 @@
       flex: 1 1 265px / $container-middle * 100%;
     }
     @include media-large() {
-      flex: 1 1 449px / $container-large * 100%;
+      flex: 1 1 (449px-25px) / $container-large * 100%;
     }
   }
 
@@ -91,7 +91,7 @@
       flex: 1 1 450px / $container-middle * 100%;
     }
     @include media-large() {
-      flex: 1 1 775px / $container-large * 100%;
+      flex: 1 1 (775px-50px) / $container-large * 100%;
     }
   }
 

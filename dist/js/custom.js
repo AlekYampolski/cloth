@@ -2,6 +2,7 @@ $( document ).ready(function() {
   $('.produtos__content').slick({
     centerMode: true,
     arrows: true,
+    infinite: true,
     variableWidth: true,
     slidesToShow: 6,
     responsive: [
@@ -9,7 +10,8 @@ $( document ).ready(function() {
         breakpoint: 1598,
         settings: {
           arrows: true,
-          centerMode: false,
+          infinite: true,
+          centerMode: true,
           variableWidth: true,
           slidesToShow: 4
         }
@@ -18,6 +20,7 @@ $( document ).ready(function() {
         breakpoint: 768,
         settings: {
           arrows: true,
+          infinite: true,
           centerMode: true,
           centerPadding: '40px',
           variableWidth: true,

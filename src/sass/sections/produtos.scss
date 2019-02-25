@@ -1,6 +1,9 @@
 .produtos {
   .wrapper {
     margin: 0;
+    @include media-large() {
+      margin: 0 160px;
+    }
   }
   &__item {
     padding: 0 6px;
@@ -43,7 +46,7 @@
   }
   .slick-prev,
   .slick-next {
-    top: 40%;
+    // top: 40%;
   }
   .slick-prev:before {
     content: "<";
